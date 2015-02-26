@@ -1,12 +1,19 @@
 import csv
 
 
-def computeProbability(pa,pb):
+def compute_log5_probability(pa,pb):
     result = (pa - (pa*pb))/(pa + pb - 2*(pa*pb))
     print result
     return result
 
+def compute_seed_probability(seedA, seedB):
+    result = .5+(seedB - seedA)*.03
+    return result
+
 def get_wins(somefile):
+    # function computes the win percentage
+    # for each team between 2006 and 2011
+    # not really utilizing this method much anymore.
     team_wins_dict = {}
     with open('regular_season_compact_results.csv','rb') as theFile:
         theReader = csv.reader(theFile,delimiter=',')
@@ -50,7 +57,7 @@ def print_percentages(aDict):
     	        if team_one != team_two and ((str(team_one)+"_"+str(team_two)) not in output or (str(team_two)+"_"+str(team_one)) not in output):
     	            pTwo = float(aDict[team_two][0])/float(aDict[team_two][1])
                 print pTwo
-                final_prob = computeProbability(pOne,pTwo)
+                final_prob = compute_seed_probability(#compute_log5_probability(pOne,pTwo)
                 output.append((str(team_one)+"_"+str(team_two),final_prob))
 
 
