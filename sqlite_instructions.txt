@@ -1,0 +1,3 @@
+sqlite> create table foo(a, b);
+sqlite> .mode csv;
+sqlite> .import test.csv foo

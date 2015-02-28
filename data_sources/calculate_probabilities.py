@@ -50,8 +50,8 @@ def computeProbability(pa,pb):
     return result
 
 def compute_seeds_probability(seedA, seedB):
-    initial_pred = (0.5 + ((seedB - seedA)*.03))
-    return (initial_pred + ((seedB - seedA)*.03))
+    #initial_pred = (0.5 + ((seedB - seedA)*.03))
+    return (0.5 + ((seedB - seedA)*.02))
 
 def parse_teams(someRow):
     print someRow
