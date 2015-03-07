@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 years = ['1993-94','1994-95','1995-96','1996-97','1997-98','1998-99','1999-00','2000-01','2001-02','2002-03','2003-04','2004-05','2005-06','2006-07','2007-08','2008-09','2009-10','2010-11','2011-12','2012-13','2013-14']
 url = "http://www.cbssports.com/collegebasketball/bracketology/nitty-gritty-report"
 r = []
-r.append([requests.get(url+year) for year in years])
+r.append([requests.get(url+year) for year in years]) #get rid of this.
 dom = web.Element(r.text)
 
 team_rpi = []
@@ -19,8 +19,8 @@ for row in tbl.by_tag('tr.row2'):
 team_rpi = pd.DataFrame(team_rpi, columns = ['Team', 'RPI'])
 #team_rpi
 print team_rpi.head()
-team_rpi.to_csv("ryans_output.csv")
-"""
+#team_rpi.to_csv("ryans_output.csv")
+
 teams = pd.read_csv('team_spellings.csv')
 team_id = []
 teams_dict = dict(zip(teams.name_spelling, teams.team_id))
@@ -60,4 +60,3 @@ team_rpi_2014 = team_rpi_2014[cols]
 team_rpi = team_rpi.append(team_rpi_2014, ignore_index = True)
 team_rpi
 
-"""
