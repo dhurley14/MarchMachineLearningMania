@@ -285,15 +285,18 @@ georgia-tech,1210
 gonzaga,1211
 grambling,1212
 grambling st.,1212
+grambling state,1212
 grambling-state,1212
 grand canyon,1213
 grand-canyon,1213
 green bay,1453
+uw green bay,1453
 hampton,1214
 hardin-simmons,1215
 hartford,1216
 harvard,1217
 hawaii,1218
+hawai'i,1218
 high point,1219
 high-point,1219
 hofstra,1220
@@ -310,6 +313,7 @@ idaho st.,1226
 idaho state,1226
 idaho-state,1226
 il chicago,1227
+uic,1227
 ill.-chicago,1227
 illinois,1228
 illinois st,1229
@@ -320,6 +324,7 @@ illinois-state,1229
 incarnate word,1230
 incarnate-word,1230
 indiana,1231
+indepenedent,1231
 indiana st,1232
 indiana st.,1232
 indiana state,1232
@@ -333,7 +338,9 @@ iowa-state,1235
 ipfw,1236
 iupu-fort wayne,1236
 iupu-fort-wayne,1236
+indiana-purdue ft. wayne,1236
 iupui,1237
+iu-purdue indianapolis,1237
 jackson st,1238
 jackson st.,1238
 jackson state,1238
@@ -437,6 +444,7 @@ middle tenn st.,1292
 middle tenn.,1292
 middle tennessee,1292
 middle-tennessee-state,1292
+middle tennessee state,1292
 milwaukee,1454
 minnesota,1278
 miss valley st.,1290
@@ -689,6 +697,7 @@ sf austin,1372
 siena,1373
 siu edwardsville,1188
 siu-edwardsville,1188
+southern ill-edwardsville,1188
 smu,1374
 south ala.,1375
 south alabama,1375
@@ -714,7 +723,9 @@ southeast-missouri-state,1369
 southeastern la.,1368
 southeastern louisiana,1368
 southeastern-louisiana,1368
+southeast louisiana,1368
 southern,1380
+southern university,1380
 southern california,1425
 southern ill.,1356
 southern illinois,1356
@@ -871,6 +882,7 @@ virginia-commonwealth,1433
 virginia-military-institute,1440
 virginia-tech,1439
 vmi,1440
+va. military inst.,1440
 w carolina,1441
 w illinois,1442
 w kentucky,1443
@@ -921,6 +933,7 @@ wisconsin,1458
 wisconsin-green bay,1453
 wisconsin-green-bay,1453
 wisconsin-milwaukee,1454
+uw milwaukee,1454
 wofford,1459
 wright st,1460
 wright st.,1460
