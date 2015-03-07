@@ -1,0 +1,333 @@
+,Team,RPI
+0,Duke,0.6841
+1,Connecticut,0.6509
+2,Ohio State,0.6400
+3,Iowa,0.6312
+4,Gonzaga,0.6253
+5,Pittsburgh,0.6230
+6,LSU,0.6216
+7,Florida,0.6130
+8,Syracuse,0.6107
+9,Nevada,0.6064
+10,Missouri State,0.6030
+11,Arizona,0.6016
+12,Northern Iowa,0.5990
+13,Wichita State,0.5983
+14,Southern Illinois,0.5980
+15,Marquette,0.5962
+16,Bradley,0.5934
+17,Washington,0.5922
+18,George Washington,0.5918
+19,Creighton,0.5906
+20,Kentucky,0.5890
+21,Saint Joseph's,0.5862
+22,Arkansas,0.5829
+23,Michigan,0.5807
+24,Maryland,0.5799
+25,North Carolina State,0.5790
+26,Wisconsin-Milwaukee,0.5774
+27,Western Kentucky,0.5766
+28,Alabama,0.5748
+29,Colorado,0.5716
+30,Montana,0.5684
+31,Florida State,0.5658
+32,Murray State,0.5644
+33,Brigham Young,0.5638
+34,Old Dominion,0.5618
+35,Louisville,0.5585
+36,Winthrop,0.5577
+37,Rutgers,0.5545
+38,Clemson,0.5520
+39,Virginia,0.5516
+40,Virginia Commonwealth,0.5508
+41,Minnesota,0.5504
+42,Wake Forest,0.5474
+43,Manhattan,0.5456
+44,Oklahoma State,0.5448
+45,DePaul,0.5421
+46,Iowa State,0.5418
+47,Notre Dame,0.5403
+48,New Mexico State,0.5391
+49,Ohio,0.5384
+50,Saint Louis,0.5364
+51,La Salle,0.5353
+52,Marist,0.5345
+53,Samford,0.5338
+54,Georgia,0.5327
+55,Holy Cross,0.5304
+56,Mississippi State,0.5281
+57,Belmont,0.5271
+58,Northern Arizona,0.5243
+59,Albany,0.5228
+60,Coastal Carolina,0.5217
+61,Delaware State,0.5211
+62,Siena,0.5208
+63,Northern Illinois,0.5204
+64,Drexel,0.5190
+65,Oral Roberts,0.5185
+66,Illinois-Chicago,0.5163
+67,Tennessee Tech,0.5138
+68,St. John's,0.5127
+69,Missouri,0.5111
+70,San Diego,0.5106
+71,Lipscomb,0.5100
+72,Fairleigh Dickinson,0.5087
+73,Oregon,0.5075
+74,Loyola Marymount,0.5066
+75,Colorado State,0.5046
+76,Long Beach State,0.5020
+77,Austin Peay,0.5008
+78,Gardner-Webb,0.5004
+79,Georgia Southern,0.4993
+80,Utah,0.4986
+81,High Point,0.4953
+82,Washington State,0.4942
+83,California Irvine,0.4934
+84,Wyoming,0.4922
+85,Elon,0.4895
+86,Oregon State,0.4892
+87,Drake,0.4881
+88,Detroit,0.4872
+89,Arizona State,0.4865
+90,Valparaiso,0.4846
+91,Santa Clara,0.4831
+92,Green Bay,0.4809
+93,College of Charleston,0.4802
+94,UCF,0.4780
+95,Lamar,0.4763
+96,Eastern Kentucky,0.4753
+97,Portland State,0.4737
+98,Texas-Arlington,0.4722
+99,North Texas,0.4716
+100,Niagara,0.4714
+101,McNeese State,0.4710
+102,American,0.4707
+103,Tennessee State,0.4692
+104,Idaho State,0.4679
+105,Florida Atlantic,0.4675
+106,Harvard,0.4671
+107,Arkansas-Little Rock,0.4660
+108,Rice,0.4658
+109,Furman,0.4654
+110,South Carolina State,0.4640
+111,Tennessee-Martin,0.4627
+112,Charleston Southern,0.4621
+113,Fairfield,0.4613
+114,Mount St. Mary's,0.4598
+115,Wagner,0.4595
+116,Cal State Fullerton,0.4592
+117,South Florida,0.4570
+118,Portland,0.4553
+119,Montana State,0.4548
+120,Troy,0.4539
+121,Georgia State,0.4531
+122,Southern Miss,0.4517
+123,Pepperdine,0.4503
+124,New Hampshire,0.4497
+125,New Orleans,0.4486
+126,Ball State,0.4477
+127,Bowling Green,0.4474
+128,Alabama A&M;,0.4462
+129,Quinnipiac,0.4454
+130,Sacred Heart,0.4426
+131,UMKC,0.4421
+132,William &amp; Mary,0.4411
+133,Southern Methodist,0.4402
+134,Hartford,0.4386
+135,Alabama State,0.4366
+136,LIU-Brooklyn,0.4342
+137,South Dakota State,0.4332
+138,Cal Poly,0.4317
+139,NC-Greensboro,0.4300
+140,Grambling,0.4285
+141,Hampton,0.4280
+142,Colgate,0.4257
+143,Wofford,0.4248
+144,St. Bonaventure,0.4219
+145,Arkansas-Pine Bluff,0.4199
+146,Nicholls State,0.4161
+147,Maryland-Baltimore County,0.4138
+148,Navy,0.4137
+149,East Carolina,0.4107
+150,Alcorn State,0.4065
+151,Youngstown State,0.4035
+152,Eastern Michigan,0.4024
+153,Duquesne,0.3999
+154,Stony Brook,0.3957
+155,California Riverside,0.3926
+156,Longwood,0.3886
+157,Liberty,0.3853
+158,VMI,0.3818
+159,The Citadel,0.3791
+160,Army,0.3760
+161,North Carolina A&T;,0.3722
+162,Northern Colorado,0.3699
+163,Morgan State,0.3656
+164,Jacksonville,0.3518
+165,Savannah State,0.3315
+166,Villanova,0.6662
+167,Memphis,0.6507
+168,Tennessee,0.6329
+169,Texas,0.6299
+170,UCLA,0.6253
+171,North Carolina,0.6222
+172,Illinois,0.6202
+173,Oklahoma,0.6118
+174,Michigan State,0.6085
+175,Kansas,0.6057
+176,Boston College,0.6019
+177,Wisconsin,0.6000
+178,George Mason,0.5984
+179,NC-Wilmington,0.5982
+180,Hofstra,0.5971
+181,UAB,0.5943
+182,Indepenedent,0.5932
+183,Georgetown,0.5920
+184,West Virginia,0.5918
+185,Cincinnati,0.5895
+186,Bucknell,0.5866
+187,Texas A&M;,0.5847
+188,Utah State,0.5815
+189,Kent State,0.5804
+190,Air Force,0.5791
+191,California,0.5776
+192,Houston,0.5773
+193,San Diego State,0.5752
+194,Seton Hall,0.5725
+195,Northwestern State,0.5684
+196,South Carolina,0.5671
+197,Iona,0.5656
+198,South Alabama,0.5640
+199,Louisiana Tech,0.5620
+200,Akron,0.5604
+201,Vanderbilt,0.5584
+202,Temple,0.5554
+203,Texas-El Paso,0.5526
+204,Miami (Fla.),0.5519
+205,Xavier,0.5510
+206,Butler,0.5506
+207,Miami (Ohio),0.5498
+208,Stanford,0.5457
+209,Pacific,0.5455
+210,Northeastern,0.5424
+211,UNLV,0.5419
+212,Davidson,0.5410
+213,Nebraska,0.5391
+214,Pennsylvania,0.5390
+215,Hawaii,0.5373
+216,Northwestern,0.5360
+217,Charlotte,0.5350
+218,Penn State,0.5338
+219,Providence,0.5331
+220,Kansas State,0.5316
+221,Sam Houston State,0.5285
+222,Middle Tennessee,0.5272
+223,Auburn,0.5264
+224,Southern California,0.5229
+225,New Mexico,0.5218
+226,St. Mary's,0.5213
+227,Fresno State,0.5211
+228,Massachusetts,0.5205
+229,St. Peter's,0.5195
+230,Buffalo,0.5187
+231,Southern,0.5164
+232,Fordham,0.5162
+233,Texas Tech,0.5132
+234,Loyola-Chicago,0.5121
+235,Louisiana-Lafayette,0.5107
+236,Eastern Washington,0.5103
+237,Monmouth,0.5097
+238,Virginia Tech,0.5084
+239,Toledo,0.5072
+240,Lehigh,0.5052
+241,Rhode Island,0.5032
+242,Sacramento State,0.5011
+243,Mississippi,0.5007
+244,IUPUI,0.5000
+245,Georgia Tech,0.4992
+246,Indiana State,0.4984
+247,Central Connecticut State,0.4946
+248,Baylor,0.4940
+249,Chattanooga,0.4927
+250,Loyola-Maryland,0.4917
+251,Denver,0.4894
+252,Purdue,0.4885
+253,Boise State,0.4873
+254,Wright State,0.4866
+255,Jacksonville State,0.4847
+256,Dayton,0.4835
+257,San Francisco,0.4823
+258,Binghamton,0.4807
+259,Southeastern Louisiana,0.4800
+260,Evansville,0.4777
+261,Radford,0.4755
+262,Western Michigan,0.4738
+263,Yale,0.4735
+264,Princeton,0.4721
+265,Texas A&amp;M-Corpus; Christi,0.4714
+266,Tulsa,0.4711
+267,Richmond,0.4709
+268,Cornell,0.4697
+269,Boston University,0.4682
+270,Vermont,0.4675
+271,Robert Morris,0.4671
+272,Coppin State,0.4663
+273,Tulane,0.4659
+274,Santa Barbara,0.4655
+275,Towson,0.4645
+276,North Dakota State,0.4633
+277,E. Tennessee State,0.4625
+278,Chicago State,0.4618
+279,Arkansas State,0.4611
+280,Marshall,0.4596
+281,Illinois State,0.4595
+282,Appalachian State,0.4590
+283,Delaware,0.4562
+284,NC-Asheville,0.4552
+285,Stephen F. Austin,0.4539
+286,Rider,0.4536
+287,Cleveland State,0.4523
+288,Jackson State,0.4505
+289,Kennesaw State,0.4500
+290,Norfolk State,0.4487
+291,Florida A&M;,0.4480
+292,Canisius,0.4476
+293,Texas-San Antonio,0.4466
+294,Louisiana-Monroe,0.4460
+295,Lafayette,0.4432
+296,Weber State,0.4426
+297,Western Carolina,0.4420
+298,Stetson,0.4406
+299,San Jose State,0.4400
+300,St. Francis (N.Y.),0.4372
+301,Brown,0.4343
+302,Bethune-Cookman,0.4339
+303,Florida International,0.4327
+304,Utah Valley,0.4301
+305,Maine,0.4292
+306,Cal State Northridge,0.4282
+307,Oakland,0.4264
+308,TCU,0.4255
+309,Columbia,0.4223
+310,IPFW,0.4208
+311,Campbell,0.4188
+312,California Davis,0.4139
+313,Mississippi Valley State,0.4138
+314,James Madison,0.4119
+315,Idaho,0.4088
+316,Southern Utah,0.4036
+317,Mercer,0.4034
+318,Texas Southern,0.4007
+319,Eastern Illinois,0.3975
+320,Dartmouth,0.3956
+321,Southeast Missouri State,0.3901
+322,Central Michigan,0.3862
+323,Western Illinois,0.3825
+324,Maryland-Eastern Shore,0.3802
+325,Morehead State,0.3761
+326,St. Francis (Pa.),0.3742
+327,Howard,0.3714
+328,Texas State-San Marcos,0.3680
+329,Texas-Pan American,0.3618
+330,North Florida,0.3414
+331,Prairie View A&M;,0.3302

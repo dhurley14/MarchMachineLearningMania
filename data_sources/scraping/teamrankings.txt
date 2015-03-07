@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  	<!-- START OPTIMIZELY CODE -->
+		
+		<script src="//cdn.optimizely.com/js/2407510779.js"></script>
+		<script>
+			// add GA event if there are page load delays:
+			window.onload = function() {
+
+			  if ( typeof window.performance != 'undefined' ) {
+			
+			    var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart; 
+			    
+			    if ( loadTime > 5000 ) {
+			
+			      var installed = jQuery('script[src*="cdn.optimizely.com"]').length > 0 ? 'installed' : 'not installed';
+			
+			      _gaq.push(['_trackEvent', 'Warning', 'Is Optimizely causing issues?', 'Optimizely is ' + installed + ' & ' + typeof optimizely, loadTime, true]);
+			
+			    }
+			  }
+			};
+		</script>
+	
+	<!-- END OPTIMIZELY CODE -->
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>NCAA College Basketball RPI Rankings (updated today)</title>
+	<meta name="description" content="NCAA college basketball RPI rankings and ratings for 2015, updated daily for all teams and available historically for every day of the 2015 season."/>
+		<meta name="robots" content="NOODP"/>
+				
+		  <link type="text/css" rel="stylesheet" href="/css/v3/reset.css" />
+		  <link type="text/css" rel="stylesheet" href="/css/v3/standard.css?ver=1423863614" />
+		  <link type="text/css" rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/base/jquery-ui.css" />
+			  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+	 
+	
+  <!--[if IE 7]>
+    <link type="text/css" media="screen" rel="stylesheet" href="/css/v3/ie7.css" />
+    <link type="text/css" media="screen" rel="stylesheet" href="/css/bracket/ie7.css" />
+    <script type="text/javascript" src="/scripts/js/v3/ie7.js"></script>
+  <![endif]-->
+  <!--[if IE]>
+    <link type="text/css" media="screen" rel="stylesheet" href="/css/v3/ie.css" />
+    <script type="text/javascript" src="/scripts/js/v3/ie.js"></script>
+  <![endif]-->
+	
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2329615-1']);
+  _gaq.push(['_setCustomVar', 1, 'MemberType', 'Visitor', 1]); 
+  _gaq.push(['_setCustomVar', 2, 'PageType', 'rpi', 3]); 
+  _gaq.push(['_trackPageview']);
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body class="ncb notice ncb-rankings ncb-rankings-team-NULL">
+
+ <!-- START OVERLAY -->
+ <div class="hidden">
+ 	<div id="mm13overlay">
+ 	<div class="tr-close-button"><a href="#"><img width="32" height="32" alt="Close" src="/images/icons/delete_90px.png"></a></div>
+ 		<img src="/images/mm2015/2015-NCAA-Bracket-Pack.jpg" width="750" height="475" alt="Get our free 2015 Bracket Pack, including printable blank bracket, top upset and value picks, and our Data-Driven Bracket Strategy Guide. Sent to you via email starting Selection Sunday, March 15." />
+ 		<div class="popup-subscribe">
+ 			<form action="/mailchimp/subscribe.php" method="post" id="subscribe-form">
+ 				<div class="form-row"><label for="email">Your Email:</label><input type="email" class="email" id="email" /><span class="error">X</span></div>
+ 				<p class="margin-bottom"><a href="#" class="btn btn-green" id="subscribe-button" style="width:300px;position:relative;left:14px;">Get the 2015 Bracket Pack »</a></p>
+ 			</form>
+			<div id="form-response"><p>&nbsp;</p></div>
+ 		</div> <!-- popup-subscribe -->
+ 				<p class="action-links"><a href="#" id="remind-me">Remind me later</a> <a href="#" id="dont-ask">Don't ask me again</a></p>
+ 	</div> <!-- mm13overlay -->
+ </div> <!-- hidden -->
+ <!-- END OVERLAY -->
+
+
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+<script src="/scripts/js/jquery/jquery.colorbox-min.js"></script>
+<link rel="stylesheet" href="/css/colorbox/colorbox.css" />
+<script src="/scripts/js/jquery/jquery.cookie.js"></script>
+<style>
+#mm13overlay {position: relative;}
+#mm13overlay .tr-close-button {height: 32px;position: absolute;right: 5px;top: 5px;width: 32px;}
+#mm13overlay p {margin-bottom:0;}
+#mm13overlay label {font-size:36px;margin-right:10px;color:#222;}
+#mm13overlay .email {width:440px;font-size:32px;padding:4px 5px;border:2px solid #666;}
+#mm13overlay .email.error {border-color: #9A3336;} 
+#mm13overlay .form-row {margin:8px 0;}
+#mm13overlay .form-row span.error {font-weight: bold;color:#9A3336;font-size:36px;padding-left: 10px;visibility: hidden;}
+#mm13overlay .form-row span.error.show {visibility: visible;}
+#mm13overlay .popup-subscribe {position:absolute;bottom:22px;/*bottom:21px;top:330px;*/width:100%;text-align: center;background-color:#E39205;min-height: 142px;z-index:9999;}
+#mm13overlay #form-response, #mm13overlay #form-response a {color:#fff;}
+#mm13overlay #form-response.error {background-color:#9A3336;}
+#mm13overlay #form-response.success {background-color:#006600;font-size: 20px;padding:12px 0;margin-top: 38px;line-height: 1.2;}
+#mm13overlay #form-response p {padding:2px 0;}
+#mm13overlay #remind-me {margin-right:2em;}
+#meind-me.success {margin-right:0;}
+#mm13overlay .action-links {background-color: #ddd;background-color:#E39205;padding:2px 0;text-align: center;}
+#mm13overlay .action-links a {color:#222;}
+#mm13overlay .action-links.success {background-color:#006600;}
+#mm13overlay .action-links.success a {color:#fff;}
+#mm13overlay .margin-bottom {margin-bottom:5px;}
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	// first make sure they have cookies enabled, so we don't annoy the heck out of people
+	
+	// set a test cookie with short expires
+	var date = new Date();
+	var minutes = 2;
+	date.setTime(date.getTime() + (minutes * 60 * 1000));
+	
+	$.cookie('cookie_check', '1', { path: '/', expires: date });
+	if ($.cookie('cookie_check') == '1') {
+		// cookies are enabled, now do our thing
+	
+		var date = new Date();
+		var now = date.getTime();
+		
+		// check if we should be showing anything
+		var showOverlay = false;
+		if ($.cookie('show_2015_bracket_pack_after')) {
+			var cookieValue = $.cookie('show_2015_bracket_pack_after');
+			if (cookieValue < now) {
+				showOverlay = true;
+			}
+			//alert(cookieValue);
+			//var difference = cookieValue - now;
+			//alert(difference);
+		} else {
+			//alert("No cookie!");
+			showOverlay = true;
+		}
+		
+		// big layout problems in IE7, punting for now and just not showing the popup if it's IE7 or lower
+		if ( $.browser.msie ) {
+			if (parseInt($.browser.version, 10) <= 7 ) {
+				showOverlay = false;
+			}
+		}
+		
+		if (showOverlay == true) {
+			var mm13timer = setTimeout(openOverlay, 4000);
+		}
+	
+	$("#mm13overlay #remind-me, #cboxOverlay").click(function(e) {
+		e.preventDefault();
+		// make sure they didn't subscribe already, in which case we don't want to show them this again:
+		var currCookieValue = $.cookie('show_2015_bracket_pack_after');
+		if (!currCookieValue || ((currCookieValue - now) < 24 * 60 * 60 *1000)) {
+			var date = new Date();
+			var hours = 18; // how long to wait before showing the popup again
+			var cookieTime = date.getTime() + (hours * 60 * 60 * 1000);
+			date.setTime(cookieTime);
+			$.cookie('show_2015_bracket_pack_after', cookieTime, {
+				path: '/',
+				expires: date
+			});
+		}
+		$.colorbox.close();
+	});
+	
+	$("#mm13overlay #dont-ask, #mm13overlay .tr-close-button a").click(function(e) {
+		e.preventDefault();
+		var date = new Date();
+		var days = 90;
+		var cookieTime = date.getTime() + (days * 24 * 60 * 60 * 1000);
+		date.setTime(cookieTime);
+		$.cookie('show_2015_bracket_pack_after', cookieTime, {
+			path: '/',
+			expires: date
+		});
+		$.colorbox.close();
+	});
+	
+	$("#mm13overlay #close-window").live("click", function(e) {
+		e.preventDefault();
+		$.colorbox.close();
+	});
+	
+	$("#mm13overlay #subscribe-button").click(function(e) {
+		e.preventDefault();
+		$("#mm13overlay #subscribe-form").submit();
+	});
+	
+	$("#mm13overlay #subscribe-form").submit(function(e) {
+		e.preventDefault();
+		var buttonText = $("#mm13overlay #subscribe-button").text();
+		$("#mm13overlay #subscribe-button").removeClass('btn-green').addClass('btn-processing').text("Processing...");
+		$.ajax({
+			url: $("#mm13overlay #subscribe-form").attr('action'),
+			data: 'ajax=true&email=' + $('#mm13overlay #email').val(),
+			success: function(msg) {
+				if (msg.slice(0,18) == "Success-subscribed") {
+					var displayMsg = msg.slice(18);
+				} else {
+					var displayMsg = msg;
+				}
+				$('#mm13overlay #form-response p').html(displayMsg);
+				$("#mm13overlay #subscribe-button").removeClass('btn-processing').addClass('btn-green');
+				$("#mm13overlay .form-row span.error").removeClass('show');
+				$("#mm13overlay .email").removeClass('error');
+				$("#mm13overlay #form-response").removeClass('error success');
+				
+				// Success:
+				if (msg.slice(0,7) == "Success") {
+					$("#mm13overlay #form-response, #mm13overlay .action-links, #mm13overlay #remind-me").addClass("success");
+					$("#mm13overlay #subscribe-button").hide();
+					$("#mm13overlay #email").attr('disabled', 'disabled');
+					$("#mm13overlay #dont-ask").remove();
+					$("#mm13overlay .action-links").html('&nbsp;');
+					var date = new Date();
+					var days = 90;
+					var cookieTime = date.getTime() + (days * 24 * 60 * 60 * 1000);
+					date.setTime(cookieTime);
+					$.cookie('show_2015_bracket_pack_after', cookieTime, {
+						path: '/',
+						expires: date
+					});
+				} else if (msg.slice(0,5) == "Error") { // Error
+					$("#mm13overlay #form-response, #mm13overlay .email").addClass("error");
+					$("#mm13overlay .form-row span.error").addClass('show');
+					$("#mm13overlay #subscribe-button").text(buttonText);
+				}
+			}
+		});
+
+	});
+	
+	} // cookie check
+
+	function openOverlay() {
+		$.colorbox({
+			open: true,
+			href: "#mm13overlay",
+			inline: true,
+			fixed: true,
+			className: "no-close-button",
+			escKey: false,
+			onComplete: function() {
+				$("#cboxWrapper").height($("#cboxWrapper").height()-28); // only way to remove extra 28px black space at bottom
+			}
+		})
+	}
+});
+
+</script>
+
+
+<div id="top-bar" class="stay">
+	
+<div id="top-wrapper">
+		<p class="top-message">&nbsp;</p>
+				
+<div class="account">
+	<ul>
+			<li><a href="https://www.teamrankings.com/login">Login</a></li>
+		<li><a href="https://www.teamrankings.com/register">Register</a></li>
+						</ul>
+</div>
+
+</div> <!-- top-wrapper --></div>
+
+
+
+  
+  <div id="wrapper">
+	<div id="header" class="">
+	  		<div class="logo"><a href="http://www.teamrankings.com/">TeamRankings</a></div>
+  	  <div id="right-header">
+  					</div> <!-- #right-header -->
+  </div>
+ 
+ <div id="menu">
+ 	<div class="section-header office-pools"><a href="/ncaa-tournament">NCAA Tournament 2015</a></div>
+ 	<div class="section-header sports">Predictions, Stats, Rankings & Odds</div>
+ 	<div class="section-header more"><a href="/jobs/">We’re Hiring!</a></div>
+
+  <ul class="nav clear">
+    <li id="nav-home"><a href="/" class="toplevel">Home</a></li>
+    <li class="section-divider"><a href="/ncaa-bracket-picks/" id="optimizely-nav-test">Bracket Pool Picks</a></li>
+    <li><a href="/ncaa-tournament/bracketology/">NCAA Bracketology</a></li>
+        <li id="nav-ncb" class="dropdown section-divider"><a href="/ncb" class="toplevel">NCAAB</a>
+		<ul>
+			<li><a href="/ncb">College Basketball Home</a></li>
+			<li><a href="/ncaa-bracket-picks">NCAA Bracket Picks</a></li>
+			<li><a href="/ncaa-tournament">NCAA Tournament 2015</a></li>
+			<li><a href="/ncaa-tournament/bracketology">Bracketology Projections</a></li>
+			<li><a href="/ncaa-tournament/bracket-predictions">Bracket Survival Predictions</a></li>
+			<li><a href="/ncb/conference-tournaments">Conference Tournaments</a></li>
+			<li><a href="/ncaa-basketball-win-picks">Game Winner Picks</a></li>
+			<li><a href="/ncaa-basketball/projections/standings">Season Projections</a></li>
+			<li><a href="/ncaa-basketball-ats-picks">Point Spread Picks</a></li>
+			<li><a href="/ncaa-basketball-over-under-picks">Over/Under Picks</a></li>
+			<li><a href="/ncaa-basketball-money-line-picks">Money Line Picks</a></li>
+			<li><a href="/ncaa-basketball-betting-picks">Predictions Grid</a></li>
+			<li><a href="/ncaa-basketball-upset-predictions">Most Likely Upsets</a></li>
+			<li><a href="/ncb/betting-models">Prediction Accuracy</a></li>
+			<li><a href="/ncb/rankings">Rankings</a></li>
+			<li><a href="/ncb/stats">Stats</a></li>
+			<li><a href="/ncb/odds">Odds</a></li>
+			<li><a href="/ncb/trends">Trends</a></li>
+			<li><a href="/ncb/teams">Teams</a></li>
+			<li><a href="/ncb/players">Players</a></li>
+			<li><a href="/ncb/scores">Scores</a></li>
+			<li><a href="/ncb/schedules">Schedules</a></li>
+		</ul>
+    </li>
+    <li id="nav-nba" class="dropdown"><a href="/nba" class="toplevel">NBA</a>
+        <ul>
+          <li><a href="/nba">NBA Basketball Home</a></li>
+          <li><a href="/nba-win-picks">Game Winner Picks</a></li>
+          <li><a href="/nba/projections/standings">Season Projections</a></li>
+          <li><a href="/nba-ats-picks">Point Spread Picks</a></li>
+          <li><a href="/nba-over-under-picks">Over/Under Picks</a></li>
+          <li><a href="/nba-money-line-picks">Money Line Picks</a></li>
+          <li><a href="/nba-betting-picks">Predictions Grid</a></li>
+          <li><a href="/nba-upset-predictions">Most Likely Upsets</a></li>
+          <li><a href="/nba/betting-models">Prediction Accuracy</a></li>
+          <li><a href="/nba/rankings">Rankings</a></li>
+          <li><a href="/nba/stats">Stats</a></li>
+          <li><a href="/nba/odds">Odds</a></li>
+          <li><a href="/nba/trends">Trends</a></li>
+          <li><a href="/nba/teams">Teams</a></li>
+          <li><a href="/nba/players">Players</a></li>
+          <li><a href="/nba/scores">Scores</a></li>
+          <li><a href="/nba/schedules">Schedules</a></li>
+          <li><a href="/nba/standings">Standings</a></li>
+        </ul>
+    </li>
+    <li id="nav-mlb" class="dropdown"><a href="/mlb" class="toplevel">MLB</a>
+        <ul>
+          <li><a href="/mlb">MLB Baseball Home</a></li>
+          <li><a href="/mlb-win-picks">Game Winner Picks</a></li>
+          <li><a href="/mlb/projections/standings">Season Projections</a></li>
+          <li><a href="/mlb-money-line-picks">Money Line Picks</a></li>
+          <li><a href="/mlb-over-under-picks">Over/Under Picks</a></li>
+          <li><a href="/mlb-run-line-picks">Run Line Picks</a></li>
+          <li><a href="/mlb-betting-picks">Predictions Grid</a></li>
+          <li><a href="/mlb/betting-models">Prediction Accuracy</a></li>
+          <li><a href="/mlb/rankings">Rankings</a></li>
+          <li><a href="/mlb/stats">Stats</a></li>
+          <li><a href="/mlb/odds">Odds</a></li>
+          <li><a href="/mlb/trends">Trends</a></li>
+          <li><a href="/mlb/teams">Teams</a></li>
+          <li><a href="/mlb/players">Players</a></li>
+          <li><a href="/mlb/scores">Scores</a></li>
+          <li><a href="/mlb/standings">Standings</a></li>
+          <li><a href="/mlb/schedules">Schedules</a></li>
+        </ul>
+    </li>
+    <li id="nav-ncf" class="dropdown"><a href="/ncf" class="toplevel">NCAAF</a>
+        <ul>
+          <li><a href="/ncf">College Football Home</a></li>
+    <li><a href="/college-football-bowls">Bowl Games 2014-15</a></li>
+     	  <li><a href="/college-bowl-pool-picks">Bowl Pool Picks</a></li>
+     <li><a href="/college-football-win-picks">Game Winner Picks</a></li>
+          <li><a href="/college-football/projections/standings">Season Projections</a></li>
+          <li><a href="/college-football-ats-picks">Point Spread Picks</a></li>
+          <li><a href="/college-football-over-under-picks">Over/Under Picks</a></li>
+          <li><a href="/college-football-money-line-picks">Money Line Picks</a></li>
+          <li><a href="/college-football-betting-picks">Predictions Grid</a></li>
+          <li><a href="/college-football-upset-predictions">Most Likely Upsets</a></li>
+          <li><a href="/ncf/betting-models">Prediction Accuracy</a></li>
+          <li><a href="/ncf/rankings">Rankings</a></li>
+          <li><a href="/ncf/stats">Stats</a></li>
+          <li><a href="/ncf/odds">Odds</a></li>
+          <li><a href="/ncf/trends">Trends</a></li>
+          <li><a href="/ncf/teams">Teams</a></li>
+          <li><a href="/ncf/players">Players</a></li>
+          <li><a href="/ncf/scores">Scores</a></li>
+          <li><a href="/ncf/schedules/season">Schedules</a></li>
+          <li><a href="/ncf/standings">Standings</a></li>
+        </ul>
+    </li>    
+	<li class="megamenu" id="nav-nfl-new"><a href="/nfl" class="toplevel">NFL</a>
+		<div class="megamenu-content clearfix">
+			<div class="mega-premium clearfix">
+				<div class="mega-col mega-featured">
+					<a href="/football-pool-picks/" class="mega-heading">Pick’em Pool Picks</a>
+					<ul>
+						<li><a href="/football-pool-picks/">NFL Pick’em Pool Picks</a></li>
+						<li><a href="/nfl-survivor-pool-picks/">NFL Survivor Pool Picks</a></li>
+					</ul>
+					<p><a href="/nfl-survivor-pool-picks/"><img src="/images/homepage/thumb-nfl-survivor-pools.jpg" width="150" height="150" /></a></p>
+				</div> <!-- col -->
+				
+				<div class="mega-col">
+					<a href="/nfl-win-picks/" class="mega-heading">Predictions</a>
+					<ul class="mega-divider">
+						<li><a href="/nfl-win-picks/">Game Winner Picks</a></li>
+						<li><a href="/nfl-upset-predictions/">Most Likely Upsets</a></li>
+					</ul>
+					<ul class="mega-divider">
+						<li><a href="/nfl-betting-picks/">Betting Picks Grid</a></li>
+						<li><a href="/nfl-ats-picks/">Point Spread Picks</a></li>
+						<li><a href="/nfl-over-under-picks/">Over/Under Picks</a></li>
+						<li><a href="/nfl-money-line-picks/">Money Line Picks</a></li>
+					</ul>
+					<ul class="mega-divider">
+						<li><a href="/nfl/projections/standings/">Season Projections</a></li>
+						<li><a href="/nfl/projections/standings/">Playoff Odds</a></li>
+					</ul>
+					<ul>
+						<li><a href="/nfl/betting-models/detailed-splits/">Prediction Accuracy</a></li>
+					</ul>
+	
+				</div> <!-- col -->
+			</div> <!-- premium -->
+			
+			<div class="mega-free clearfix">
+			
+				<div class="mega-col mega-first-free">
+					<a href="/nfl/rankings/" class="mega-heading">Rankings</a>
+					<ul class="mega-divider">
+						<li><a href="/nfl/rankings/">All Rankings</a></li>
+					</ul>
+					<ul>
+						<li><a href="/nfl/ranking/predictive-by-other">Predictive</a></li>
+						<li><a href="/nfl/ranking/schedule-strength-by-other">Strength of Schedule</a></li>
+						<li><a href="/nfl/ranking/future-sos-by-other">Future SOS</a></li>
+						<li><a href="/nfl/ranking/last-5-games-by-other">Last 5 Games</a></li>
+						<li><a href="/nfl/ranking/home-by-other">Home Games</a></li>
+						<li><a href="/nfl/ranking/away-by-other">Away Games</a></li>
+						<li><a href="/nfl/ranking/in-division-by-other">Division Games</a></li>
+						<li><a href="/nfl/ranking/non-division-by-other">Non-Division Games</a></li>
+						<li><a href="/nfl/ranking/home-adv-by-other">Home Advantage</a></li>
+						<li><a href="/nfl/ranking/luck-by-other">Luck</a></li>
+					</ul>
+				
+				</div> <!-- col -->
+	
+				<div class="mega-col">
+					<a href="/nfl/stats/" class="mega-heading">Stats</a>
+					<ul class="mega-divider">
+						<li><a href="/nfl/stats/">All Stats</a></li>
+					</ul>
+					<ul>
+						<li><a href="/nfl/stat/points-per-game">Points Per Game</a></li>
+						<li><a href="/nfl/stat/1st-half-points-per-game">1H Points Per Game</a></li>
+						<li><a href="/nfl/stat/plays-per-game">Plays Per Game</a></li>
+						<li><a href="/nfl/stat/yards-per-play">Yards Per Play</a></li>
+						<li><a href="/nfl/stat/red-zone-scoring-pct">Red Zone Scoring</a></li>
+						<li><a href="/nfl/stat/opponent-red-zone-scoring-pct">RZ Scoring Allowed</a></li>
+						<li><a href="/nfl/stat/opponent-rushing-yards-per-game">Rush Yards Allowed</a></li>
+						<li><a href="/nfl/stat/opponent-passing-yards-per-game">Pass Yards Allowed</a></li>
+						<li><a href="/nfl/stat/penalties-per-game">Penalties Per Game</a></li>
+						<li><a href="/nfl/stat/turnover-margin-per-game">Turnover Margin</a></li>
+					</ul>
+				
+				</div> <!-- col -->
+	
+				<div class="mega-col">
+					<a href="/nfl/teams/" class="mega-heading">Teams</a>
+					<ul class="mega-divider">
+						<li><a href="/nfl/teams/">All Teams</a></li>
+					</ul>
+					<ul>
+						<li><a href="/nfl/team/denver-broncos">Denver Broncos</a></li>
+						<li><a href="/nfl/team/seattle-seahawks">Seattle Seahawks</a></li>
+						<li><a href="/nfl/team/kansas-city-chiefs">Kansas City Chiefs</a></li>
+						<li><a href="/nfl/team/carolina-panthers">Carolina Panthers</a></li>
+						<li><a href="/nfl/team/new-orleans-saints">New Orleans Saints</a></li>
+						<li><a href="/nfl/team/dallas-cowboys">Dallas Cowboys</a></li>
+						<li><a href="/nfl/team/san-francisco-49ers">San Francisco 49ers</a></li>
+						<li><a href="/nfl/team/new-england-patriots">New England Patriots</a></li>
+						<li><a href="/nfl/team/chicago-bears">Chicago Bears</a></li>
+						<li><a href="/nfl/team/green-bay-packers">Green Bay Packers</a></li>
+					</ul>
+				</div> <!-- col -->
+	
+				<div class="mega-col">
+					<a href="/nfl/odds/" class="mega-heading">Odds</a>			
+					<ul class="mega-divider mega-section">
+						<li><a href="/nfl/odds/">Odds</a></li>
+						<li><a href="/nfl/odds-history/results/">Odds History</a></li>
+						<li><a href="/nfl/odds-movement/ats/results/">Line Movement</a></li>
+					</ul>
+	
+	
+					<a href="/nfl/trends/win_trends/" class="mega-heading">Trends</a>
+					<ul class="mega-divider mega-section">
+						<li><a href="/nfl/trends/win_trends/">Win-Loss Trends</a></li>
+						<li><a href="/nfl/trends/ats_trends/">ATS Trends</a></li>
+						<li><a href="/nfl/trends/ou_trends/">Over/Under Trends</a></li>
+					</ul>
+	
+	
+					<a href="/nfl/schedules/season/" class="mega-heading">Matchups</a>
+					<ul>
+						<li><a href="/nfl/scores/">Scores</a></li>
+						<li><a href="/nfl/schedules/season/">Schedules</a></li>
+					</ul>
+				</div> <!-- col -->
+			</div> <!-- free -->		
+		
+		</div> <!-- megamenu-content -->
+	</li>
+		<!--<li id="nav-twitter"><a class="top-level" href="https://twitter.com/teamrankings"><span class="icon-twitter" aria-hidden="true"></span><span class="visuallyhidden">Twitter</span></a></li>
+	<li id="nav-facebook"><a class="top-level" href="https://www.facebook.com/TeamRankings"><span class="icon-facebook" aria-hidden="true"></span><span class="visuallyhidden">Facebook</span></a></li>-->
+    <li class="dropdown section-divider" id="nav-more"><a class="toplevel" href="/about/">About</a>
+        <ul>
+			<li><a href="/about/">Overview</a></li>
+			<li><a href="/about/meet-the-nerds">Meet The Nerds</a></li>
+			<li><a href="/jobs">Jobs</a></li>
+			<li><a href="/about/contact-us">Contact Us</a></li>
+        </ul>
+    </li>
+	<li><a href="/jobs">Jobs</a></li>
+    <li id="nav-blog"><a class="toplevel" href="http://www.teamrankings.com/blog">Blog</a></li>
+  </ul>
+
+	<div id="menu-bg-left"></div>
+	<div id="menu-bg-right"></div>
+
+  </div> <!-- #menu -->
+ 
+	<div id="inner" class="clear">
+		<div id="content">
+	
+<h1 id="h1-title">NCAA College Basketball RPI Rankings & Ratings 2015</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<div class="highlight-msg"><p>This is one of our old power ratings. You can see a list of all of our new power ratings on our <a href="/ncb/rankings/">Rankings Overview page</a>.</p></div>
+		
+	<div class="clear">
+        		  <div class="ajax-wrapper module">
+		<form action="/ajax/league/v3/rankings_controller.php" class="ajax-filter" method="post">
+	  <table cellspacing="0">
+		<input type="hidden" name="type" value="detail" />
+		<input type="hidden" name="league" value="ncb" />
+		<input type="hidden" name="rating_id" value="514" />
+		<input type="hidden" name="season_id" value="" />
+		<input type="hidden" name="cat_type" value="2" />
+		<input type="hidden" name="view" value="team_v2" />
+		<input type="hidden" name="view_type" value="team" />
+		<input type="hidden" name="table_view" value="team_v2" />
+		<input type="hidden" name="force_period_id" value="" />
+		<input type="hidden" name="is_rpi_ranking" value="1" />
+			<tr>
+				<td>
+					  <span id="date-field">
+						<label for="date">Date:</label> <span id="date-output">02/28</span>
+						<input id="date" type="hidden" name="date" value="02/28/2011" />
+						<img src="http://www.teamrankings.com/images/cal_16.png" />
+					</span>
+				</td>
+							</tr>
+		</table>
+	</form>
+	<div class="ajax-div"></div>
+	</div>
+	</div>
+</div>		<div id="sidebar">
+  			<div class="pullout">
+  <h4>NCAA BB RPI Rankings</h4>
+  <ul>
+  	    <li class="current"><a href="/ncaa-basketball/rpi-ranking/rpi-rating-by-team">Overall RPI</a></li>
+  	    <li><a href="/ncaa-basketball/rpi-ranking/sos-rpi-rating-by-team">Strength of Schedule RPI</a></li>
+  	    <li><a href="/ncaa-basketball/rpi-ranking/rpi-rating-by-conf">Conference RPI</a></li>
+  	    <li><a href="/ncaa-basketball/rpi-ranking/sos-rpi-rating-by-conf">Conference SOS RPI</a></li>
+  </ul>
+</div>    <div class="subnav">
+  	<ul>
+  <li class="subnav-title"><a href="/ncaa-tournament/bracketology/">Bracketology</a></li>
+  <li id="subnav-bracketology" ><a href="/ncaa-tournament/bracketology/">Bracketology 2015</a></li>
+  <li id="subnav-bracket-predictions" ><a href="/ncaa-tournament/bracket-predictions/">Bracket Predictions</a></li>
+</ul>
+<ul>
+  <li class="subnav-title"><a href="/ncaa-basketball-betting-picks">Betting Picks</a></li>
+  <li id="subnav-ncb-predictions"><a href="/ncaa-basketball-betting-picks">Predictions Grid</a></li>
+  <li id="subnav-ncb-picks-ats"><a href="/ncaa-basketball-ats-picks">Point Spread Picks</a></li>
+  <li id="subnav-ncb-picks-total"><a href="/ncaa-basketball-over-under-picks">Over Under Picks</a></li>
+  <li id="subnav-ncb-picks-ml"><a href="/ncaa-basketball-money-line-picks">Money Line Picks</a></li>
+</ul>
+<ul>
+  <li class="subnav-title"><a href="/ncaa-basketball-win-picks">Predictions</a></li>
+  <li id="subnav-ncb-predictions-game-winner"><a href="/ncaa-basketball-win-picks">Game Winner Picks</a></li>
+  <li id="subnav-ncb-predictions-upsets"><a href="/ncaa-basketball-upset-predictions">Most Likely Upsets</a></li>
+  <li id="subnav-ncb-season-projections"><a href="/ncaa-basketball/projections/standings">Season Projections</a></li>
+</ul>
+<ul>
+  <li class="subnav-title"><a href="/ncb/rankings">Rankings</a></li>
+  <li id="subnav-ncb-rankings"><a href="/ncb/rankings">Team Rankings</a></li>
+  <li id="subnav-ncb-rpi"><a href="/ncb/rpi">RPI Rankings</a></li>
+  <li id="subnav-ncb-polls"><a href="/ncaa-basketball/polls">AP & Coaches Polls</a></li>
+</ul>
+<ul>
+  <li class="subnav-title"><a href="/ncb/stats">Stats</a></li>
+  <li id="subnav-ncb-stats"><a href="/ncb/stats">All Stats</a></li>
+  <li id="subnav-ncb-team-stats"><a href="/ncb/team-stats">Team Stats</a></li>
+  <li id="subnav-ncb-player-stats"><a href="/ncb/player-stats">Player Stats</a></li>
+</ul>
+<ul>
+  <li class="subnav-title"><a>Betting Data</a></li>
+  <li id="subnav-ncb-odds"><a href="/ncb/odds">Odds & Lines</a></li>
+  <li id="subnav-ncb-odds"><a href="/ncb/odds-history">Odds Analysis</a></li>
+  <li id="subnav-ncb-trends-ats"><a href="/ncb/trends/ats_trends">ATS Trends</a></li>
+  <li id="subnav-ncb-performance"><a href="/ncb/betting-models">Prediction Accuracy</a></li>
+</ul>
+<ul>
+  <li class="subnav-title"><a>Fan Pages</a></li>
+  <li id="subnav-ncb-teams"><a href="/ncb/teams">Team Pages</a>
+  </li>
+  <li id="subnav-ncb-players"><a href="/ncb/players">Player Pages</a></li>
+  <li id="subnav-ncb-conferences"><a href="/ncb/conferences">Conference Pages</a></li>
+</ul>
+<ul>
+  <li class="subnav-title"><a href="/ncb/scores">Scores & Schedules</a></li>
+  <li id="subnav-ncb-scores"><a href="/ncb/scores">Scores</a></li>
+  <li id="subnav-ncb-schedules"><a href="/ncb/schedules">Schedules</a></li>
+  <li id="subnav-ncb-standings"><a href="/ncb/standings">Standings</a></li>
+</ul>
+<ul>
+  <li class="subnav-title"><a href="/ncb/conference-tournaments/">Conference Tourneys</a></li>
+  <li id="subnav-conference-tournaments" ><a href="/ncb/conference-tournaments/">Conf Tournaments</a></li>
+  <li id="subnav-american-tournament" ><a href="/ncb/conference-tournaments/american-bracket">AAC Bracket 2015</a></li>
+  <li id="subnav-acc-tournament" ><a href="/ncb/conference-tournaments/acc-bracket">ACC Bracket 2015</a></li>
+  <li id="subnav-big-east-tournament" ><a href="/ncb/conference-tournaments/big-east-bracket">Big East Bracket 2015</a></li>
+  <li id="subnav-big-ten-tournament" ><a href="/ncb/conference-tournaments/big-ten-bracket">Big Ten Bracket 2015</a></li>
+  <li id="subnav-big-12-tournament" ><a href="/ncb/conference-tournaments/big-12-bracket">Big 12 Bracket 2015</a></li>
+  <li id="subnav-pac-12-tournament" ><a href="/ncb/conference-tournaments/pac-12-bracket">Pac 12 Bracket 2015</a></li>
+  <li id="subnav-sec-tournament" ><a href="/ncb/conference-tournaments/sec-bracket">SEC Bracket 2015</a></li>
+</ul>
+<ul>
+  <li class="subnav-title"><a>From The Nerds</a></li>
+    <li id="subnav-ncb-articles"><a href="/ncb/news-articles">NCAA Blog</a></li>
+</ul>
+<ul>
+  <li class="subnav-title"><a href="/ncb">Home</a></li>
+  <li id="subnav-ncb-home"><a href="/ncb">NCAAB Home</a></li>
+</ul>  </div>
+  </div>
+	</div>
+  </div>
+  	<div id="tr-footer">
+	<div class="tr-wrapper clear">
+
+		<div class="column">
+			<ul class="tr-links">
+				<li class="fh"><a>Office Pool Picks</a></li>
+				<li><a href="/football-pool-picks">Football Pool Picks</a></li>
+				<li><a href="/nfl-survivor-pool-picks">NFL Survivor Pool Picks</a></li>
+				<li><a href="/college-bowl-pool-picks">College Bowl Pool Picks</a></li>
+				<li><a href="/ncaa-bracket-picks">NCAA Bracket Picks</a></li>
+			</ul>
+
+			<ul class="tr-links">
+				<li class="fh"><a>Rankings</a></li>
+				<li><a href="/nfl/rankings">NFL Rankings</a></li>
+				<li><a href="/nba/rankings">NBA Rankings</a></li>
+				<li><a href="/mlb/rankings">MLB Rankings</a></li>
+				<li><a href="/ncf/rankings">College Football Rankings</a></li>
+				<li><a href="/ncb/rankings">College Basketball Rankings</a></li>
+			</ul>
+		</div>
+
+		<div class="column">
+			<ul class="tr-links">
+				<li class="fh"><a>Betting Picks</a></li>
+				<li><a href="/nfl-betting-picks">NFL Picks</a></li>
+				<li><a href="/nba-betting-picks">NBA Picks</a></li>
+				<li><a href="/mlb-betting-picks">MLB Picks</a></li>
+				<li><a href="/college-football-betting-picks">College Football Picks</a></li>
+				<li><a href="/ncaa-basketball-betting-picks">College Basketball Picks</a></li>
+			</ul>
+
+			<ul class="tr-links">
+				<li class="fh"><a>Stats</a></li>
+				<li><a href="/nfl/stats">NFL Stats</a></li>
+				<li><a href="/nba/stats">NBA Stats</a></li>
+				<li><a href="/mlb/stats">MLB Stats</a></li>
+				<li><a href="/ncf/stats">College Football Stats</a></li>
+				<li><a href="/ncb/stats">College Basketball Stats</a></li>
+			</ul>
+		</div>
+
+		<div class="column">
+			<ul class="tr-links">
+				<li class="fh"><a>Point Spread Picks</a></li>
+				<li><a href="/nfl-ats-picks">NFL Spread Picks</a></li>
+				<li><a href="/nba-ats-picks">NBA Spread Picks</a></li>
+				<li><a href="/mlb-run-line-picks">MLB Spread Picks</a></li>
+				<li><a href="/college-football-ats-picks">College Football Spread Picks</a></li>
+				<li><a href="/ncaa-basketball-ats-picks">College Basketball Spread Picks</a></li>
+			</ul>
+
+			<ul class="tr-links">
+				<li class="fh"><a>Odds</a></li>
+				<li><a href="/nfl/odds">NFL Odds</a></li>
+				<li><a href="/nba/odds">NBA Odds</a></li>
+				<li><a href="/mlb/odds">MLB Odds</a></li>
+				<li><a href="/ncf/odds">College Football Odds</a></li>
+				<li><a href="/ncb/odds">College Basketball Odds</a></li>
+			</ul>
+		</div>
+
+		<div class="column">
+			<ul class="tr-links">
+				<li class="fh"><a>Predictions</a></li>
+				<li><a href="/nfl-win-picks">NFL Predictions</a></li>
+				<li><a href="/nba-win-picks">NBA Predictions</a></li>
+				<li><a href="/mlb-win-picks">MLB Predictions</a></li>
+				<li><a href="/college-football-win-picks">College Football Predictions</a></li>
+				<li><a href="/ncaa-basketball-win-picks">College Basketball Predictions</a></li>
+			</ul>
+
+			<ul class="tr-links">
+				<li class="fh"><a>Strength of Schedule</a></li>
+				<li><a href="/nfl/ranking/strength-of-schedule-by-team">NFL Strength of Schedule</a></li>
+				<li><a href="/nba/ranking/strength-of-schedule-by-team">NBA Strength of Schedule</a></li>
+				<li><a href="/mlb/ranking/strength-of-schedule-by-team">MLB Strength of Schedule</a></li>
+				<li><a href="/college-football/ranking/strength-of-schedule-by-team">College Football Strength of Schedule</a></li>
+				<li><a href="/ncaa-basketball/ranking/strength-of-schedule-by-team">College Basketball Strength of Schedule</a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+<div id="footer-left"></div>
+
+<div class="footer-social-links">
+	<ul>
+		<li class="twitter-footer-link"><a href="https://twitter.com/teamrankings"><span class="icon-twitter" aria-hidden="true"></span><span class="visuallyhidden">Twitter</span></a></li>
+		<li class="facebook-footer-link"><a href="https://www.facebook.com/TeamRankings"><span class="icon-facebook" aria-hidden="true"></span><span class="visuallyhidden">Facebook</span></a></li>
+	</ul>
+</div> <!-- social-links -->
+
+<div id="tr-footer-abs"><div class="tr-footer-wrapper">&copy; 2005-2015 Team Rankings, LLC | All Rights Reserved | <a href="/terms-of-service/?back=none" target="_blank">Terms of Service</a> | <a href="/privacy-policy/?back=none" target="_blank">Privacy Policy</a><br/>TeamRankings.com is not affiliated with the National Collegiate Athletic Association (NCAA&reg;) or March Madness Athletic Association, neither of which has supplied, reviewed, approved or endorsed the material on this site. TeamRankings.com is solely responsible for this site but makes no guarantee about the accuracy or completeness of the information herein.</div></div>
+    <script type="text/javascript" src="/scripts/js/v3/jquery.truncator.js"></script>
+    <script type="text/javascript" src="/scripts/js/v3/jquery.metadata.js"></script>
+    <script type="text/javascript" src="/scripts/js/v3/jquery.tipsy.js"></script>
+    <script type="text/javascript" src="/scripts/js/v3/main.js?ver=1423863614"></script>
+ 
+<!-- Start Quantcast tag -->
+
+<script type="text/javascript">
+_qoptions={
+qacct:"p-31siHdZhBL3HE"
+};
+</script>
+
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-31siHdZhBL3HE.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag -->
+<!-- Start TR tag -->
+<iframe src="http://www.teamrankings.com/logger.php?page_key=ncaa-basketball%2Frpi-ranking%2Frpi-rating-by-team&amp;page_league=ncb&amp;page_type=rpi&amp;trk=&amp;uri=%2Fncaa-basketball%2Frpi-ranking%2Frpi-rating-by-team%3Frating_date%3D2011-02-28&amp;refer=&amp;check=cf1abb5d8b64e345d66cf76385c3bebe" width="0" height="0" frameborder="0"></iframe>
+<!-- End TR tag -->
+
+	<!-- START CRAZY EGG TRACKING CODE -->
+	
+		<script type="text/javascript">
+		setTimeout(function(){var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0025/6789.js?"+Math.floor(new Date().getTime()/3600000);
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+		</script>
+	
+	<!-- END CRAZY EGG TRACKING CODE -->
+
+</body>
+</html>
