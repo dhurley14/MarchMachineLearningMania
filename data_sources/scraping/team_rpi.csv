@@ -1,4 +1,4 @@
-year,id,Team,RPI
+num,year,id,Team,RPI
 0,2015,1246,Kentucky,0.6811
 1,2015,1438,Virginia,0.6669
 2,2015,1458,Wisconsin,0.6639
