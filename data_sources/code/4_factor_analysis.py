@@ -25,6 +25,7 @@ with open('regular_season_detailed_results.csv','rb') as theFile:
                 w_orb = int(row[14])
                 w_drb = int(row[15])
                 w_to = int(row[17])
+                opp_drb = int(row[28])
     
                 #CHECK TO SEE IF KEY EXISTS
                 if season + '_' + win_team in season_totals_dict.keys():
@@ -37,12 +38,14 @@ with open('regular_season_detailed_results.csv','rb') as theFile:
                     season_totals_dict[season + '_' + win_team]["to"] += w_to
                     season_totals_dict[season + '_' + win_team]["orb"] += w_orb
                     season_totals_dict[season + '_' + win_team]["drb"] += w_drb
+                    season_totals_dict[season + '_' + win_team]["opp_drb"] += opp_drb
                 else:
                     #CREATE
                      season_totals_dict[season + '_' + win_team] = {"fgm" : w_fgm, "fga" : w_fga,
                                                                "3fgm" : w_3fgm, "fta" : w_fta,
                                                                "ftm" : w_ftm, "to" : w_to,
-                                                               "orb" : w_orb, "drb" : w_drb}
+                                                               "orb" : w_orb, "drb" : w_drb,
+                                                               "opp_drb" : opp_drb}
                 #NOW FOR THE LOSING TEAM
                         #Probably could've reused the w_variables. Shit.
                 loss_team = row[4]
@@ -55,6 +58,7 @@ with open('regular_season_detailed_results.csv','rb') as theFile:
                 l_orb = int(row[27])
                 l_drb = int(row[28])
                 l_to = int(row[30])
+                l_opp_drb = w_drb
     
                 #UPDATE
                 if season + '_' + loss_team in season_totals_dict.keys():
@@ -66,11 +70,42 @@ with open('regular_season_detailed_results.csv','rb') as theFile:
                     season_totals_dict[season + '_' + loss_team]["to"] += l_to
                     season_totals_dict[season + '_' + loss_team]["orb"] += l_orb
                     season_totals_dict[season + '_' + loss_team]["drb"] += l_drb
+                    season_totals_dict[season + '_' + loss_team]["opp_drb"] += l_opp_drb
                 #CREATE
                 else:
                      season_totals_dict[season + '_' + loss_team] = {"fgm" : l_fgm, "fga" : l_fga,
                                                                "3fgm" : l_3fgm, "fta" : l_fta,
                                                                "ftm" : l_ftm, "to" : l_to,
-                                                               "orb" : l_orb, "drb" : l_drb}
+                                                               "orb" : l_orb, "drb" : l_drb,
+                                                               "opp_drb": l_opp_drb}
                
-print pd.DataFrame(season_totals_dict).T
+four_factors_df = pd.DataFrame(columns = ['Year', 'id', 'Tov per Poss', 
+                                          'EFG','Off Reb %',
+                                          'FTM per FGA'])
+
+for team in season_totals_dict:
+   
+    season = team[:4]
+    team_id = team[-4:]
+    #PUT DICT INTO TEMP VARIABLE TO REDUCE CONFUSION OF EXTRA BRACKETS
+    temp = season_totals_dict[team]
+    
+    #TURNOVERS PER POSSESION. THATS MY PSUEDO POSSESION COUNT. ITS A FREAKING ESTIMATE.
+    poss = temp['fga'] + temp['fta']/2 + temp['to'] - temp['orb']
+    tov_per_poss = float(temp['to']) / float(poss)
+    
+    #EFFECTIVE FIELD GOAL %
+    efg = (float(temp['fgm']) + .5 * float(temp['3fgm'])) / float(temp['fga'])
+    
+    #OFFENSIVE REBOUND PERCENTAGE
+    orb_percent = float(temp['orb']) / float(temp['orb'] + temp['opp_drb'])
+    
+    #FTM PER FGA
+    ftm_per_fga = float(temp['ftm']) / float(temp['fga'])
+    
+    some_list = pd.Series([season, team_id, tov_per_poss, efg, orb_percent, ftm_per_fga], index = 
+                          ['Year', 'id', 'Tov per Poss', 
+                                          'EFG','Off Reb %',
+                                          'FTM per FGA'])
+    four_factors_df = four_factors_df.append(some_list, ignore_index = True)
+
