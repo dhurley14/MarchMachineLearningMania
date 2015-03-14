@@ -90,8 +90,38 @@ def print_percentages_seeds(aDictFile, seedyear):
     csvwritefile.close()
     print "target closed"
 
+def calc_probs(teamA, teamB):
+    the_prob = ((teamA*(1-teamB))/((teamA*(1-teamB)+(1-teamA)*teamB)))
+    if the_prob == 1.0:
+        the_prob = .98
+    if the_prob == 0.0:
+        the_prob = 0.02
+    return the_prob
+    
+def print_percentages_winProb(aDictFile):
+
+    dictfile = open(aDictFile).read()
+    team_keys = ast.literal_eval(dictfile)
+    csvfile = open('sample_submission.csv','rb') #open file for reading and writing
+    csvreader = csv.reader(csvfile,delimiter=',')
+    csvwritefile = open('kalman_results.csv','wb') #output.
+    csvwriter = csv.writer(csvwritefile,delimiter=',')
+    csvreader.next()
+
+    for row in csvreader:
+        year, teama, teamb = parse_teams(row[0])
+        print team_keys[teama], team_keys[teamb]
+        prob = 0.0
+        pOne = float(team_keys[teama][0])/float(team_keys[teama][1])
+        pTwo = float(team_keys[teamb][0])/float(team_keys[teamb][1])
+        prob = calc_probs(float(pOne),float(pTwo))
+        print prob
+        csvwriter.writerow([row[0],prob])
 
 
+    csvfile.close()
+    csvwritefile.close()
+    print "target closed"
 
 def print_percentages_log5(aDictFile):
 
@@ -129,8 +159,8 @@ if __name__ == '__main__':
     yearlist = ast.literal_eval(sys.argv[2])
     tourney_seed_file = sys.argv[1]
     for year in yearlist:
-        build_seed_dict(tourney_seed_file,year)
-        print_percentages_seeds('team_seeds_dict_'+str(year)+'.csv',year)
+        #build_seed_dict(tourney_seed_file,year)
+        print_percentages_winProb('team_wins_dict_'+str(year))
     #print_percentages(sys.argv[1])
 
     

@@ -18,7 +18,7 @@ def get_wins(somefile,startyear, endyear):
         next(theReader,None)
         
         for row in theReader:
-            if int(row[0]) > int(startyear) and int(row[0]) < int(endyear): #make sure the year (row[0]) is between our start and end years.
+            if int(row[0]) >= int(startyear) and int(row[0]) <= int(endyear): #make sure the year (row[0]) is between our start and end years.
                 #print row[2],row[4]
                 try:
                     team_wins_dict[int(row[2])] = [int(team_wins_dict[int(row[2])][0])+1,int(team_wins_dict[int(row[2])][1])+1]
@@ -41,13 +41,14 @@ def get_wins(somefile,startyear, endyear):
     #print team_wins_dict
     #return team_wins_dict
 
-    with open('team_wins_dict_'+str(startyear)+'_'+str(endyear)) as writefile:
-        writefile.write(team_wins_dict)
+    with open('team_wins_dict_'+str(endyear),"wb") as writefile:
+        writefile.write(str(team_wins_dict))
 
     return None
 	
 
 if __name__ == '__main__':
+    import sys
     # [1] is the file we're reading from
     # [2] is the start year to begin gathering win percentages
     # [3] is the end year.

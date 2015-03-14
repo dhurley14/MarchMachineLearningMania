@@ -1,6 +1,8 @@
 import csv
 
+""" this is the most recent file
 
+"""
 def compute_log5_probability(pa,pb):
     result = (pa - (pa*pb))/(pa + pb - 2*(pa*pb))
     print result
@@ -9,6 +11,11 @@ def compute_log5_probability(pa,pb):
 def compute_seed_probability(seedA, seedB):
     result = .5+(seedB - seedA)*.03
     return result
+
+
+def calc_probs(teamA, teamB):
+    return ((teamA*(1-teamB))/((teamA*(1-teamB)+(1-teamA)*teamB)))
+
 
 def get_wins(somefile):
     # function computes the win percentage

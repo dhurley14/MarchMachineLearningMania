@@ -3,9 +3,22 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-master = pd.read_csv("teams_rpi_sos_pe.csv")
+#master = pd.read_csv("teams_rpi_sos_pe.csv")
+#csvreader = csv.reader("teams_rpi_sos_pe.csv")
+# BUILD DICT FOR GETTING SOS
+team_id_year_sos_dict = {}
+with open("teams_rpi_sos_pe.csv",'rb') as csvfile:
+    csvreader = csv.reader(csvfile,delimiter=',')
+    for row in csvreader:
+        team_id_year_sos_dict[str(row[1])+"_"+str(row[2])] = row[5]
+
+print team_id_year_sos_dict
 
 season_totals_dict = {}
+
+
+def find_sos(ateam,aseason):
+    return float(team_id_year_sos_dict[str(aseason)+"_"+str(ateam)])
 
 with open('regular_season_detailed_results.csv','rb') as theFile:
         theReader = csv.reader(theFile,delimiter=',')
@@ -87,6 +100,10 @@ for team in season_totals_dict:
    
     season = team[:4]
     team_id = team[-4:]
+    try:
+        sos = find_sos(team_id,season)
+    except Exception, e:
+        print(e)
     #PUT DICT INTO TEMP VARIABLE TO REDUCE CONFUSION OF EXTRA BRACKETS
     temp = season_totals_dict[team]
     
@@ -102,10 +119,21 @@ for team in season_totals_dict:
     
     #FTM PER FGA
     ftm_per_fga = float(temp['ftm']) / float(temp['fga'])
-    
-    some_list = pd.Series([season, team_id, tov_per_poss, efg, orb_percent, ftm_per_fga], index = 
+
+    # WEIGHT OSCAR SCORE BY SOS - DEVIN
+    oscar_score = ftm_per_fga*sos + orb_percent*sos + efg*sos + tov_per_poss*sos
+    if oscar_score >= 1.0 or oscar_score <= 0.0:
+        print("oscar score: "+str(oscar_score))
+    some_list = pd.Series([season, team_id, tov_per_poss, efg, orb_percent, ftm_per_fga, oscar_score], index = 
                           ['Year', 'id', 'Tov per Poss', 
                                           'EFG','Off Reb %',
-                                          'FTM per FGA'])
+                                          'FTM per FGA','Oscar score'])
     four_factors_df = four_factors_df.append(some_list, ignore_index = True)
+
+# save four_factors_df to csv.
+#print(four_factors_df)
+four_factors_df.to_csv("four_factors_df.csv")
+print("wrote to csv")
+
+    
 
