@@ -1,3 +1,5 @@
+import csv
+
 """
 season = 2011
 team_id = 1104
@@ -29,8 +31,8 @@ with open('tourney_compact_results.csv','rb') as theFile:
                 winners_win_efg += 1
 
             #CALCULATE TOV PER POSSESSION
-            win_team_tov_per_poss = win_team_df.tov_per_poss.values[0] * float(1/float(win_team_sos.SOS.values[0])
-            loss_team_tov_per_poss = loss_team_df.tov_per_poss.values[0] * float(1/float(loss_team_sos.SOS.values[0])
+            win_team_tov_per_poss = win_team_df.tov_per_poss.values[0] * float(1/float(win_team_sos.SOS.values[0]))
+            loss_team_tov_per_poss = loss_team_df.tov_per_poss.values[0] * float(1/float(loss_team_sos.SOS.values[0]))
             
             #SEE IF WINNING TEAM HAD LOWER TURNOVERS PER POSSESSION
             if win_team_tov_per_poss < loss_team_tov_per_poss:
